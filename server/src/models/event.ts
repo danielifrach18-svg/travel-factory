@@ -19,7 +19,7 @@ export const Event = db.sequelize.define(
       },
     },
     type: {
-      type: DataTypes.STRING,
+      type: DataTypes.ENUM("Visit", "Treatment", "Observation"),
       allowNull: false,
     },
     description: {

@@ -1,0 +1,100 @@
+.animal-container {
+  padding: 0 17rem 0 17rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.animal-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.animal-info {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.events-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.events-list li {
+  background-color: #fff;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.event-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.event-form input,
+.event-form select,
+.event-form button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.event-form input:focus,
+.event-form select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px #007bff;
+}
+
+.event-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.event-form button:hover {
+  background-color: #0056b3;
+}
+
+.export-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.export-button:hover {
+  background-color: #1e7e34;
+}
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}

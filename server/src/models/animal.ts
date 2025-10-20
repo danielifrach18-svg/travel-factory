@@ -1,7 +1,7 @@
 import { differenceInYears } from "date-fns";
 import { DataTypes } from "sequelize";
 import db from "../config/db.config";
-import { AnimalInstance } from "../animals/interfaces/AnimalInterface";
+import { AnimalInstance } from "../animals/interfaces/Animal.Interface";
 
 export const Animal = db.sequelize.define<AnimalInstance>(
   "Animal",
