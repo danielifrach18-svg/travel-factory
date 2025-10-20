@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import ExcelJS from "exceljs";
 import { Animal, Event } from "../../models";
 import { AnimalInstance } from "../interfaces/AnimalInterface";
+import { EventsAttributes } from "../interfaces/EventsInterface";
 
 export const findAllAnimals = async (req: Request, res: Response) => {
   try {
@@ -93,7 +94,7 @@ export const exportEvents = async (req: Request, res: Response) => {
     sheet.addRow([]);
     sheet.addRow(["Event ID", "Type", "Description", "Event Date"]);
 
-    animal.events.forEach((ev: any) =>
+    animal.events.forEach((ev: EventsAttributes) =>
       sheet.addRow([ev.id, ev.type, ev.description, ev.event_date])
     );
 
